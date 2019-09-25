@@ -1,5 +1,12 @@
 # FootlockerChallenge
 
+Next steps: (more resources)
+-  Create a shared component for side menu shopping items
+- change select otptions to generate photo list of item sizes/colors
+
+Nice Haves:
+- data source and service for each component
+    - use for data rendering and tree navigation
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
