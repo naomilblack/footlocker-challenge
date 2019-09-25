@@ -1,0 +1,80 @@
+<mat-card class="card">
+    <img mat-card-image src="https://www.betterthanpants.com/media/catalog/product/e/a/eat-sleep-code-repeat-tshirt-mens-regular-ash.jpg
+    ">
+    <div class="wrapper">
+      <mat-card-header>
+        <mat-card-title>Awesome T-shirt!</mat-card-title>
+        <mat-card-subtitle>Men's</mat-card-subtitle>
+        <mat-card-title>$40.00</mat-card-title>
+      </mat-card-header>
+      <button mat-icon-button>
+          <i class="material-icons">
+            star
+          </i>
+          <i class="material-icons">
+            star
+          </i>
+          <i class="material-icons">
+            star
+          </i>
+          <i class="material-icons">
+            star_half
+          </i>
+          <i class="material-icons">
+            star_border 
+          </i>
+          <i class="rating">
+            4/5
+          </i>
+        </button>
+      <mat-card-content>
+        <p>Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. 
+          Carpe diem vulputate est nec commodo rutrum. Pellentesque mattis convallis nisi eu and 
+          I ain’t stoppin until the swear jar’s full. Ut rhoncus velit at mauris interdum, 
+          fringilla dictum neque rutrum. Curabitur mattis odio at erat viverra lobortis. 
+          Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. 
+          Carpe diem vulputate est nec commodo rutrum. Pellentesque mattis convallis nisi eu and 
+          I ain’t stoppin until the swear jar’s full. Ut rhoncus velit at mauris interdum, 
+          fringilla dictum neque rutrum. Curabitur mattis odio at erat viverra lobortis.
+        </p>
+      </mat-card-content>
+      <mat-form-field>
+          <mat-label>Choose Color</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let color of colors" [value]="color.value">
+              {{color.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Choose Size</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let size of sizes" [value]="size.value">
+                {{size.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      <div class="shopping-buttons">
+          <button mat-stroked-button>Find in store</button>
+          <button mat-flat-button color="primary">Add to cart</button>
+        </div>  
+      <mat-card-actions>
+        <hr>
+        <button mat-icon-button>
+          <i class="material-icons">
+            bookmark_border
+          </i>
+        </button>
+        <button mat-icon-button>
+          <i class="material-icons">
+            star
+          </i>
+        </button>
+        <button mat-icon-button>
+          <i class="material-icons">
+            favorite_border
+          </i>
+        </button>
+      </mat-card-actions>
+    </div>
+  </mat-card> 

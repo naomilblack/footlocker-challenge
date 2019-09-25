@@ -1,0 +1,43 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <mat-nav-list>
+      <mat-list-item [routerLink]="['/home']" (click)="sidenav.toggle()">
+        <mat-icon>home</mat-icon>Home
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/about']" (click)="sidenav.toggle()">
+        <mat-icon>info</mat-icon> About
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/pants']" (click)="sidenav.toggle()">
+        <mat-icon>shop</mat-icon> Pants
+      </mat-list-item>
+      <mat-list-item [routerLink]="['products/product-list']" (click)="sidenav.toggle()">
+        <mat-icon>shop</mat-icon> Shirts
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/accesories']" (click)="sidenav.toggle()">
+        <mat-icon>shop</mat-icon> Accesories
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span flex class="toolbar-spacer"></span>
+        <div fxShow fxHide.xs="true" fxHide.xl="false">
+          <button mat-button [routerLink]="['/about']" >About</button>
+          <button mat-button [routerLink]="['/pants']">Pants</button>
+          <button mat-button [routerLink]="['products/product-list']" >Shirts</button>
+          <button mat-button [routerLink]="['/accesories']">Accesories</button>
+        </div>
+        <!-- <button mat-icon-button>
+            <mat-icon>search</mat-icon>
+          </button> -->
+      </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

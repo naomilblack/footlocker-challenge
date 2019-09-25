@@ -1,0 +1,26 @@
+<div class="product-list-page">
+<div class= "card-container"> 
+ <mat-card class="card" *ngFor="let card of cards">
+    <button mat-icon-button>
+        <i class="material-icons">
+          favorite_border
+        </i>
+      </button>
+    <img class ="image" [style.background-image] mat-card-image src="https://www.betterthanpants.com/media/catalog/product/e/a/eat-sleep-code-repeat-tshirt-mens-regular-ash.jpg
+    ">
+    <mat-card-header class="data">
+      <div class="text-data mat-typography" >
+        <mat-card-title class="title"> {{card.name}}</mat-card-title>
+        <mat-card-subtitle class="category">{{card.category}}</mat-card-subtitle>
+        <mat-card-content class="price">${{card.price}}</mat-card-content>
+        <button [routerLink]="['/products/product-detail']" mat-stroked-button>View</button>
+        <button mat-flat-button color="primary">Add to cart</button>
+      </div>
+       </mat-card-header>
+  </mat-card> 
+</div> 
+<mat-paginator [length]="10"
+[pageSize]="10"
+[pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+</div>

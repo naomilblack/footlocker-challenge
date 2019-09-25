@@ -1,0 +1,33 @@
+mat-sidenav-container,
+mat-sidenav,
+mat-sidenav-content {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 25%;
+  min-width: 200px;
+}
+
+mat-list-item mat-icon {
+  margin-right: 0.5em;
+}
+mat-button{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+body {
+  margin: 0%;
+}
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+a{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+div {
+  overflow: inherit;
+}
